@@ -1,0 +1,6 @@
+# CA="https://acme-staging-v02.api.letsencrypt.org/directory"
+
+CHALLENGETYPE="dns-01"
+KEY_ALGO="prime256v1"
+
+HOOK="${SCRIPTDIR}/hook.sh"

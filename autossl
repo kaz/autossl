@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+cd /dehydrated
+PATH=$PATH:$PWD
+
+dehydrated --register --accept-terms
+dehydrated --cron
