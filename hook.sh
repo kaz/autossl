@@ -14,7 +14,7 @@ clean_challenge() {
 startup_hook() {
 	pkill -TERM pdns_server
 	rm -f $DB
-	curl https://raw.githubusercontent.com/PowerDNS/pdns/master/modules/gsqlite3backend/schema.sqlite3.sql | sqlite3 $DB
+	sqlite3 $DB < /usr/share/doc/pdns/schema.sqlite3.sql
 	pdns_server
 }
 exit_hook() {
